@@ -1,0 +1,147 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.main {
+  width: 100%;
+  height: 100vh;
+  background-color: #309794;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  height: 70%;
+  width: 35rem;
+  /* justify-content: space-between; */
+  flex-direction: column;
+  border-radius: 1.3rem;
+  /* align-items: center; */
+  background: #fff;
+  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.2);
+}
+
+.container .image {
+  margin: 0px auto;
+  margin-top: 2rem;
+  max-width: 8rem;
+}
+
+.container .image img {
+  width: 6rem;
+  object-fit: cover;
+  object-position: center;
+}
+
+.container h1 {
+  text-align: center;
+  font-size: 2.3rem;
+  font-weight: 700;
+  margin: 0.8rem 0;
+}
+
+.container .input {
+  width: 90%;
+  display: flex;
+  gap: 1rem;
+  margin: 0px 2rem;
+  margin-top: 0.5rem;
+}
+
+.container .input input {
+  width: 100%;
+  height: 2rem;
+  border: 2px solid black;
+  border-radius: 2rem;
+  font-size: 1.2rem;
+  padding-left: .8rem;
+  font-weight: 400;
+}
+
+.container .input button {
+  border-radius: 2rem;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 600;
+  font-family: inherit;
+  color: #fff;
+  background-color: #7738c8;
+  cursor: pointer;
+  transition: background-color 0.25s;
+}
+.container .input button:hover {
+  background-color: #975be6;
+}
+
+.container .range {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-self: flex-start;
+  margin: 0px 2rem;
+  margin-top: 1rem;
+  width: 90%;
+}
+
+.container .range label {
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+.container .options {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0px 2rem;
+  margin-top: 2rem;
+  gap: 10px; 
+}
+
+.container .option-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.container .option-item label {
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.container .option-item input[type = "checkbox"] {
+  transform: scale(1.5);
+  -webkit-transform: scale(1.5);
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
